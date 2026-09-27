@@ -1,0 +1,16 @@
+generated: 2026-09-27
+method: probed
+source: "https://www.babyquip.com/privacypolicy"
+signals:
+  data_subject_request:
+    - source: "https://www.babyquip.com/privacypolicy"
+      http_status: 200
+      fetched: "2026-09-27"
+      quote: "Data Subject Rights: Users that reside in the EEA, UK, or Switzerland have the following rights with respect to their personal information:"
+      note: "Lists rights to access, correction, erasure, portability, etc."
+  data_retention:
+    - source: "https://www.babyquip.com/privacypolicy"
+      http_status: 200
+      fetched: "2026-09-27"
+      quote: "We will only retain your personal information for as long as your account is active or as necessary to provide you Services, comply with our legal obligations, resolve disputes, and enforce our agreements."
+      note: "Describes retention period tied to account activity and legal obligations."

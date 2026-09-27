@@ -1,23 +1,83 @@
 aid: babyquip
+
 name: BabyQuip
-description: 'BabyQuip is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://d28w2s5u3j4b6n.cloudfront.net/img/BQ_PrimaryCentered_RGB.jpg
+
+description: 'BabyQuip is the #1 baby equipment rental service and marketplace, offering thousands of baby gear items in over 5,000+ cities across
+  the US, Canada, Mexico, Caribbean, Australia & New Zealand. Founded in 2016 by traveling parents, it provides clean, safe, insured rentals of
+  cribs, strollers, car seats, toys, and more, improving family travel experiences. Over 500,000 reservations have been completed, with 62% of
+  parents saying renting saved their vacation.'
+
 url: https://raw.githubusercontent.com/api-evangelist/babyquip/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- BabyGear
+- Rental
+- Marketplace
+- Travel
+- Family
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/babyquip-hosts.yml
+- type: Vendors
+  url: vendors/babyquip-vendors.yml
+- type: Newsroom
+  url: https://www.babyquip.com/press
+- type: Login
+  url: https://www.babyquip.com/customers/login
+- type: Leadership
+  url: https://www.babyquip.com/team
+- type: DomainSecurity
+  url: security/babyquip-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.babyquip.com
+- type: Documentation
+  url: https://www.babyquip.com/about
+- type: GettingStarted
+  url: https://www.babyquip.com/signup
+- type: Support
+  url: https://www.babyquip.com/contact
+- type: Blog
+  url: https://blog.babyquip.com
+- type: TermsOfService
+  url: https://www.babyquip.com/terms
+- type: PrivacyPolicy
+  url: https://www.babyquip.com/privacypolicy
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: API reference page returns 404 and no machine‑readable spec is available.
+  evidence:
+  - url: https://www.babyquip.com/api-docs
+    status: 404
+  checked: 2026-09-27
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
